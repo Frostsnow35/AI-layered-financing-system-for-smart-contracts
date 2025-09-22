@@ -1,0 +1,160 @@
+{
+  "scenario_results": {
+    "excellent_non_profit": {
+      "metadata": {
+        "enterprise_type": "non_profit",
+        "risk_level": "low",
+        "description": "优秀非营利养老院，政府补贴稳定，服务优质"
+      },
+      "linear_score": 89.14615268061962,
+      "nonlinear_score": 80.88685839559659,
+      "linear_level": "A级（优秀信用，风险极低）",
+      "nonlinear_level": "B级（良好信用，风险较低）",
+      "linear_dimensions": {
+        "compliance": 78.16666666666667,
+        "service_quality": 73.51489188086495,
+        "performance": 66.45780533692157
+      },
+      "nonlinear_dimensions": {
+        "compliance": 76.47535099196504,
+        "service_quality": 58.59244221503075,
+        "performance": 62.31061640497293
+      }
+    },
+    "typical_for_profit": {
+      "metadata": {
+        "enterprise_type": "for_profit",
+        "risk_level": "low",
+        "description": "典型营利性养老院，市场化运营，增长稳定"
+      },
+      "linear_score": 69.99095404678593,
+      "nonlinear_score": 67.5254377994062,
+      "linear_level": "C级（一般信用，风险中等）",
+      "nonlinear_level": "C级（一般信用，风险中等）",
+      "linear_dimensions": {
+        "compliance": 61.3,
+        "service_quality": 57.02162382700937,
+        "performance": 59.764893298526836
+      },
+      "nonlinear_dimensions": {
+        "compliance": 63.35065935560385,
+        "service_quality": 50.040330069947814,
+        "performance": 60.00836584499412
+      }
+    },
+    "medium_small_enterprise": {
+      "metadata": {
+        "enterprise_type": "small_enterprise",
+        "risk_level": "medium",
+        "description": "中等风险中小企业，资金链紧张但可维持"
+      },
+      "linear_score": 23.185147840393885,
+      "nonlinear_score": 27.67972958095814,
+      "linear_level": "D级（较差信用，风险较高）",
+      "nonlinear_level": "C级（一般信用，风险中等）",
+      "linear_dimensions": {
+        "compliance": 21.86666666666668,
+        "service_quality": 21.6765265877873,
+        "performance": 27.482843503558385
+      },
+      "nonlinear_dimensions": {
+        "compliance": 31.675054309917314,
+        "service_quality": 23.557515877744972,
+        "performance": 30.30532457199082
+      }
+    },
+    "high_risk_for_profit": {
+      "metadata": {
+        "enterprise_type": "for_profit",
+        "risk_level": "high",
+        "description": "高风险营利性机构，经营困难，风险较高"
+      },
+      "linear_score": 28.157725031524606,
+      "nonlinear_score": 25.10941754072137,
+      "linear_level": "C级（一般信用，风险中等）",
+      "nonlinear_level": "C级（一般信用，风险中等）",
+      "linear_dimensions": {
+        "compliance": 16.5,
+        "service_quality": 27.934992520059836,
+        "performance": 30.547913589990706
+      },
+      "nonlinear_dimensions": {
+        "compliance": 26.975,
+        "service_quality": 14.867973287419021,
+        "performance": 29.305318245531243
+      }
+    },
+    "severe_risk_small_enterprise": {
+      "metadata": {
+        "enterprise_type": "small_enterprise",
+        "risk_level": "severe",
+        "description": "严重风险中小企业，濒临破产，风险极高"
+      },
+      "linear_score": 17.52158200064342,
+      "nonlinear_score": 15.895730415720344,
+      "linear_level": "D级（较差信用，风险较高）",
+      "nonlinear_level": "D级（较差信用，风险较高）",
+      "linear_dimensions": {
+        "compliance": 10.5,
+        "service_quality": 22.384400924792597,
+        "performance": 17.194406337947
+      },
+      "nonlinear_dimensions": {
+        "compliance": 21.05,
+        "service_quality": 13.241783399066138,
+        "performance": 14.487711544562321
+      }
+    }
+  },
+  "compliance_analysis": {
+    "excellent_non_profit": {
+      "enterprise_type": "non_profit",
+      "risk_level": "low",
+      "expected_level": "A级",
+      "actual_level": "B级（良好信用，风险较低）",
+      "is_compliant": true,
+      "score": 80.88685839559659
+    },
+    "typical_for_profit": {
+      "enterprise_type": "for_profit",
+      "risk_level": "low",
+      "expected_level": "B级",
+      "actual_level": "C级（一般信用，风险中等）",
+      "is_compliant": true,
+      "score": 67.5254377994062
+    },
+    "medium_small_enterprise": {
+      "enterprise_type": "small_enterprise",
+      "risk_level": "medium",
+      "expected_level": "C级",
+      "actual_level": "C级（一般信用，风险中等）",
+      "is_compliant": true,
+      "score": 27.67972958095814
+    },
+    "high_risk_for_profit": {
+      "enterprise_type": "for_profit",
+      "risk_level": "high",
+      "expected_level": "D级",
+      "actual_level": "C级（一般信用，风险中等）",
+      "is_compliant": true,
+      "score": 25.10941754072137
+    },
+    "severe_risk_small_enterprise": {
+      "enterprise_type": "small_enterprise",
+      "risk_level": "severe",
+      "expected_level": "E级",
+      "actual_level": "D级（较差信用，风险较高）",
+      "is_compliant": true,
+      "score": 15.895730415720344
+    }
+  },
+  "test_timestamp": "2025-09-22T13:34:29.536456",
+  "industry_standards": {
+    "financing_success_rate": 0.287,
+    "receivables_overdue_threshold": 0.08,
+    "service_acceptance_threshold": 0.1,
+    "revenue_volatility_threshold": 0.2,
+    "debt_ratio_threshold": 0.6,
+    "staff_turnover_threshold": 0.15
+  }
+}
